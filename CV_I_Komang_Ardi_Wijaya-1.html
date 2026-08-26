@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - I Komang Ardi Wijaya</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae I Komang Ardi Wijaya, mahasiswa Teknologi Informasi Universitas Udayana."
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5c5c5c;
+        --line: #dcdcdc;
+        --accent: #1f4e5f;
+        --bg: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f2f2f0;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 760px;
+        margin: 48px auto;
+        background: var(--bg);
+        padding: 56px 64px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 18px;
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        margin: 0 0 6px 0;
+        font-weight: 400;
+      }
+
+      .role {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 13px;
+        color: var(--muted);
+        letter-spacing: 0.3px;
+      }
+
+      .photo {
+        width: 84px;
+        height: 108px;
+        border: 1px solid var(--line);
+        background: #fafafa;
+        flex-shrink: 0;
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      section {
+        margin-bottom: 26px;
+      }
+
+      h2 {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 11px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 12px 0;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        row-gap: 3px;
+        font-size: 14px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+      }
+
+      .contact-grid dt {
+        color: var(--muted);
+        font-size: 12px;
+        padding: 3px 0;
+      }
+
+      .contact-grid dd {
+        margin: 0;
+        padding: 3px 0;
+      }
+
+      .entry {
+        margin-bottom: 14px;
+      }
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .entry-title {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .entry-period {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry-sub {
+        font-size: 13.5px;
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 2px;
+      }
+
+      ul.bullets {
+        margin: 8px 0 0 0;
+        padding-left: 18px;
+      }
+
+      ul.bullets li {
+        font-size: 13.5px;
+        line-height: 1.55;
+        margin-bottom: 4px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: #2a2a2a;
+      }
+
+      .skill-group {
+        margin-bottom: 10px;
+      }
+      .skill-group:last-child {
+        margin-bottom: 0;
+      }
+
+      .skill-label {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 12.5px;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      footer {
+        margin-top: 36px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 10.5px;
+        color: #b0b0b0;
+        text-align: center;
+      }
+
+      @media print {
+        body {
+          background: var(--bg);
+        }
+        .page {
+          box-shadow: none;
+          margin: 0;
+          padding: 32px 40px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 32px 24px;
+          margin: 0;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+        }
+        .contact-grid {
+          grid-template-columns: 120px 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div>
+          <h1>I Komang Ardi Wijaya</h1>
+          <div class="role">
+            Mahasiswa Teknologi Informasi — Universitas Udayana
+          </div>
+        </div>
+        <div class="photo">
+          <img src="foto.jpg" alt="Foto I Komang Ardi Wijaya" />
+        </div>
+      </header>
+
+      <section>
+        <h2>Data Pribadi</h2>
+        <dl class="contact-grid">
+          <dt>Tempat, Tgl Lahir</dt>
+          <dd>Denpasar, 10 Juli 2007</dd>
+
+          <dt>Jenis Kelamin</dt>
+          <dd>Pria</dd>
+
+          <dt>Status</dt>
+          <dd>Belum Menikah</dd>
+
+          <dt>Kewarganegaraan</dt>
+          <dd>WNI</dd>
+
+          <dt>Agama</dt>
+          <dd>Hindu</dd>
+
+          <dt>Alamat</dt>
+          <dd>Jalan Subur Gg. Mirah Hati No. 9A, Denpasar</dd>
+
+          <dt>Telepon</dt>
+          <dd><a href="tel:+6287860164666">0878-6016-4666</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:ardiwjy1@gmail.com">ardiwjy1@gmail.com</a></dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Riwayat Pendidikan</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Universitas Udayana</span>
+            <span class="entry-period">2025 – Sekarang</span>
+          </div>
+          <div class="entry-sub">
+            Fakultas Teknik, Program Studi Teknologi Informasi
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">SMA Negeri 4 Denpasar</span>
+            <span class="entry-period">2022 – 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Pengalaman Organisasi &amp; Kerja</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title"
+              >Purchasing Manager — Student Company (Verve SC)</span
+            >
+            <span class="entry-period">2024 – 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>
+              Bertanggung jawab atas pengadaan dan pengelolaan pembelian
+              bahan/barang untuk kebutuhan operasional student company.
+            </li>
+            <li>
+              Berkoordinasi dengan tim internal untuk memastikan ketersediaan
+              dan efisiensi biaya pembelian.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Kegiatan Sosial &amp; Volunteer</h2>
+        <ul class="bullets">
+          <li>
+            Peserta kegiatan Bakti Sosial (BAKSOS) Program Studi Teknologi
+            Informasi di Desa Gianyar.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Keahlian</h2>
+        <div class="skill-group">
+          <div class="skill-label">Hard Skills</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Kemampuan Bahasa</div>
+          <div class="tags">
+            <span class="tag">Bahasa Inggris — Level C2</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>Curriculum Vitae — I Komang Ardi Wijaya</footer>
+    </div>
+  </body>
+</html>

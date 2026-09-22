@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - I Komang Ardi Wijaya</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae I Komang Ardi Wijaya, mahasiswa Teknologi Informasi Universitas Udayana."
+    />
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #5c5c5c;
+        --line: #dcdcdc;
+        --accent: #1f4e5f;
+        --bg: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f2f2f0;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ===== Navigasi / Bookmark ===== */
+      nav.topnav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: var(--ink);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      nav.topnav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      nav.topnav li {
+        flex: 1 1 auto;
+      }
+
+      nav.topnav a {
+        display: block;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #f2f2f0;
+        text-decoration: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      nav.topnav li:last-child a {
+        border-right: none;
+      }
+
+      nav.topnav a:hover {
+        background: var(--accent);
+      }
+
+      .page {
+        max-width: 760px;
+        margin: 48px auto;
+        background: var(--bg);
+        padding: 56px 64px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 18px;
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        margin: 0 0 6px 0;
+        font-weight: 400;
+      }
+
+      .role {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 13px;
+        color: var(--muted);
+        letter-spacing: 0.3px;
+      }
+
+      .photo {
+        width: 84px;
+        height: 108px;
+        border: 1px solid var(--line);
+        background: #fafafa;
+        flex-shrink: 0;
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      section {
+        margin-bottom: 26px;
+        scroll-margin-top: 56px; /* supaya tidak tertutup nav saat lompat bookmark */
+      }
+
+      h2 {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 11px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 12px 0;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        row-gap: 3px;
+        font-size: 14px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+      }
+
+      .contact-grid dt {
+        color: var(--muted);
+        font-size: 12px;
+        padding: 3px 0;
+      }
+
+      .contact-grid dd {
+        margin: 0;
+        padding: 3px 0;
+      }
+
+      .entry {
+        margin-bottom: 14px;
+      }
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .entry-title {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .entry-period {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry-sub {
+        font-size: 13.5px;
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 2px;
+      }
+
+      ul.bullets {
+        margin: 8px 0 0 0;
+        padding-left: 18px;
+      }
+
+      ul.bullets li {
+        font-size: 13.5px;
+        line-height: 1.55;
+        margin-bottom: 4px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: #2a2a2a;
+      }
+
+      /* ===== Tabel Pengalaman Organisasi ===== */
+      table.org-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      table.org-table caption {
+        caption-side: bottom;
+        text-align: left;
+      }
+
+      table.org-table th,
+      table.org-table td {
+        border: 1px solid var(--line);
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.org-table thead th {
+        background: var(--accent);
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+      }
+
+      table.org-table tbody tr:nth-child(even) {
+        background: #f7f7f5;
+      }
+
+      .skill-group {
+        margin-bottom: 10px;
+      }
+      .skill-group:last-child {
+        margin-bottom: 0;
+      }
+
+      .skill-label {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 12.5px;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      /* ===== Formulir Kontak ===== */
+      form.contact-form {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 16px;
+      }
+
+      form.contact-form .field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      form.contact-form .field.full {
+        grid-column: 1 / -1;
+      }
+
+      form.contact-form label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--muted);
+      }
+
+      form.contact-form input,
+      form.contact-form select,
+      form.contact-form textarea {
+        font-family: inherit;
+        font-size: 13.5px;
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--ink);
+      }
+
+      form.contact-form textarea {
+        resize: vertical;
+        min-height: 60px;
+      }
+
+      form.contact-form button {
+        grid-column: 1 / -1;
+        justify-self: start;
+        margin-top: 4px;
+        padding: 10px 22px;
+        background: var(--ink);
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        cursor: pointer;
+      }
+
+      form.contact-form button:hover {
+        background: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        form.contact-form {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      footer {
+        margin-top: 36px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 10.5px;
+        color: #b0b0b0;
+        text-align: center;
+      }
+
+      @media print {
+        nav.topnav {
+          display: none;
+        }
+        body {
+          background: var(--bg);
+        }
+        .page {
+          box-shadow: none;
+          margin: 0;
+          padding: 32px 40px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 32px 24px;
+          margin: 0;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+        }
+        .contact-grid {
+          grid-template-columns: 120px 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== Menu Navigasi (Bookmark ke tiap bagian halaman) ===== -->
+    <nav class="topnav">
+      <ul>
+        <li><a href="#data-pribadi">Data Pribadi</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#sosial">Sosial</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="page">
+      <header>
+        <div>
+          <h1>I Komang Ardi Wijaya</h1>
+          <div class="role">
+            Mahasiswa Teknologi Informasi — Universitas Udayana
+          </div>
+        </div>
+        <div class="photo">
+          <img src="Asset/foto.jpg" alt="Foto I Komang Ardi Wijaya" />
+        </div>
+      </header>
+
+      <section id="data-pribadi">
+        <h2>Data Pribadi</h2>
+        <dl class="contact-grid">
+          <dt>Tempat, Tgl Lahir</dt>
+          <dd>Denpasar, 10 Juli 2007</dd>
+
+          <dt>Jenis Kelamin</dt>
+          <dd>Pria</dd>
+
+          <dt>Status</dt>
+          <dd>Belum Menikah</dd>
+
+          <dt>Kewarganegaraan</dt>
+          <dd>WNI</dd>
+
+          <dt>Agama</dt>
+          <dd>Hindu</dd>
+
+          <dt>Alamat</dt>
+          <dd>Jalan Subur Gg. Mirah Hati No. 9A, Denpasar</dd>
+
+          <dt>Telepon</dt>
+          <dd><a href="tel:+6287860164666">0878-6016-4666</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:ardiwjy1@gmail.com">ardiwjy1@gmail.com</a></dd>
+        </dl>
+      </section>
+
+      <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Universitas Udayana</span>
+            <span class="entry-period">2025 – Sekarang</span>
+          </div>
+          <div class="entry-sub">
+            Fakultas Teknik, Program Studi Teknologi Informasi
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">SMA Negeri 4 Denpasar</span>
+            <span class="entry-period">2022 – 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="organisasi">
+        <h2>Pengalaman Organisasi &amp; Kerja</h2>
+
+        <!-- ===== Tabel Daftar Pengalaman Organisasi ===== -->
+        <table class="org-table">
+          <thead>
+            <tr>
+              <th>Peran</th>
+              <th>Organisasi</th>
+              <th>Periode</th>
+              <th>Deskripsi Singkat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purchasing Manager</td>
+              <td>Student Company (Verve SC)</td>
+              <td>2024 – 2025</td>
+              <td>
+                Bertanggung jawab atas pengadaan dan pengelolaan pembelian
+                bahan/barang untuk kebutuhan operasional student company,
+                serta berkoordinasi dengan tim internal untuk memastikan
+                ketersediaan dan efisiensi biaya pembelian.
+              </td>
+            </tr>
+            <tr>
+              <td>Peserta</td>
+              <td>Bakti Sosial (BAKSOS) — Prodi Teknologi Informasi</td>
+              <td>2025</td>
+              <td>Kegiatan sosial dan volunteer di Desa Gianyar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="sosial">
+        <h2>Kegiatan Sosial &amp; Volunteer</h2>
+        <ul class="bullets">
+          <li>
+            Peserta kegiatan Bakti Sosial (BAKSOS) Program Studi Teknologi
+            Informasi di Desa Gianyar.
+          </li>
+        </ul>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="skill-group">
+          <div class="skill-label">Hard Skills</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Kemampuan Bahasa</div>
+          <div class="tags">
+            <span class="tag">Bahasa Inggris — Level C2</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Formulir Kontak Sederhana ===== -->
+      <section id="kontak">
+        <h2>Formulir Kontak</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required />
+          </div>
+
+          <div class="field">
+            <label for="hobi">Hobi</label>
+            <select id="hobi" name="hobi" required>
+              <option value="" disabled selected>Pilih hobi</option>
+              <option value="membaca">Membaca</option>
+              <option value="olahraga">Olahraga</option>
+              <option value="coding">Coding</option>
+              <option value="musik">Musik</option>
+              <option value="fotografi">Fotografi</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="telepon">No. Telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xx-xxxx-xxxx" />
+          </div>
+
+          <div class="field full">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" placeholder="Alamat lengkap (opsional jika no. telepon sudah diisi)"></textarea>
+          </div>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
+      <footer>Curriculum Vitae — I Komang Ardi Wijaya</footer>
+    </div>
+  </body>
+</html>

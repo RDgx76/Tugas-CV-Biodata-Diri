@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - I Komang Ardi Wijaya</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae I Komang Ardi Wijaya, mahasiswa Teknologi Informasi Universitas Udayana."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Asset/style.css" />
+  </head>
+  <body>
+    <!-- ===== Menu Navigasi (Bookmark ke tiap bagian halaman) ===== -->
+    <nav class="topnav">
+      <ul>
+        <li><a href="#data-pribadi">Data Pribadi</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#sosial">Sosial</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="page">
+      <header>
+        <div>
+          <h1>I Komang Ardi Wijaya</h1>
+          <div class="role">
+            Mahasiswa Teknologi Informasi — Universitas Udayana
+          </div>
+        </div>
+        <div class="photo">
+          <img src="Asset/foto.jpg" alt="Foto I Komang Ardi Wijaya" />
+        </div>
+      </header>
+
+      <section id="data-pribadi">
+        <h2>Data Pribadi</h2>
+        <dl class="contact-grid">
+          <dt>Tempat, Tgl Lahir</dt>
+          <dd>Denpasar, 10 Juli 2007</dd>
+
+          <dt>Jenis Kelamin</dt>
+          <dd>Pria</dd>
+
+          <dt>Status</dt>
+          <dd>Belum Menikah</dd>
+
+          <dt>Kewarganegaraan</dt>
+          <dd>WNI</dd>
+
+          <dt>Agama</dt>
+          <dd>Hindu</dd>
+
+          <dt>Alamat</dt>
+          <dd>Jalan Subur Gg. Mirah Hati No. 9A, Denpasar</dd>
+
+          <dt>Telepon</dt>
+          <dd><a href="tel:+6287860164666">0878-6016-4666</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:ardiwjy1@gmail.com">ardiwjy1@gmail.com</a></dd>
+        </dl>
+      </section>
+
+      <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Universitas Udayana</span>
+            <span class="entry-period">2025 – Sekarang</span>
+          </div>
+          <div class="entry-sub">
+            Fakultas Teknik, Program Studi Teknologi Informasi
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">SMA Negeri 4 Denpasar</span>
+            <span class="entry-period">2022 – 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="organisasi">
+        <h2>Pengalaman Organisasi &amp; Kerja</h2>
+
+        <!-- ===== Tabel Daftar Pengalaman Organisasi ===== -->
+        <table class="org-table">
+          <thead>
+            <tr>
+              <th>Peran</th>
+              <th>Organisasi</th>
+              <th>Periode</th>
+              <th>Deskripsi Singkat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purchasing Manager</td>
+              <td>Student Company (Verve SC)</td>
+              <td>2024 – 2025</td>
+              <td>
+                Bertanggung jawab atas pengadaan dan pengelolaan pembelian
+                bahan/barang untuk kebutuhan operasional student company,
+                serta berkoordinasi dengan tim internal untuk memastikan
+                ketersediaan dan efisiensi biaya pembelian.
+              </td>
+            </tr>
+            <tr>
+              <td>Peserta</td>
+              <td>Bakti Sosial (BAKSOS) — Prodi Teknologi Informasi</td>
+              <td>2025</td>
+              <td>Kegiatan sosial dan volunteer di Desa Gianyar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="sosial">
+        <h2>Kegiatan Sosial &amp; Volunteer</h2>
+        <ul class="bullets">
+          <li>
+            Peserta kegiatan Bakti Sosial (BAKSOS) Program Studi Teknologi
+            Informasi di Desa Gianyar.
+          </li>
+        </ul>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="skill-group">
+          <div class="skill-label">Hard Skills</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Kemampuan Bahasa</div>
+          <div class="tags">
+            <span class="tag">Bahasa Inggris — Level C2</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Formulir Kontak Sederhana ===== -->
+      <section id="kontak">
+        <h2>Formulir Kontak</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required />
+          </div>
+
+          <div class="field">
+            <label for="hobi">Hobi</label>
+            <select id="hobi" name="hobi" required>
+              <option value="" disabled selected>Pilih hobi</option>
+              <option value="membaca">Membaca</option>
+              <option value="olahraga">Olahraga</option>
+              <option value="coding">Coding</option>
+              <option value="musik">Musik</option>
+              <option value="fotografi">Fotografi</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="telepon">No. Telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xx-xxxx-xxxx" />
+          </div>
+
+          <div class="field full">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" placeholder="Alamat lengkap (opsional jika no. telepon sudah diisi)"></textarea>
+          </div>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
+      <footer>Curriculum Vitae — I Komang Ardi Wijaya</footer>
+    </div>
+  </body>
+</html>
